@@ -1,17 +1,24 @@
 (ns mycorp.system.ram
+  "Check ram"
   (:require [riemann.config :refer :all]
             [riemann.streams :refer :all]
             [riemann.test :refer :all]
             [clojure.tools.logging :refer :all]))
 
+;; https://mcorbin.fr/posts/04-05-2017-simple-check/
+
 ;; this variable contains the ram threshold
 (def threshold 90)
 
 (def ram-stream
-  "A stream checking if the ram is > to threshold"
+  "A stream checking if the ram is > to threshold
+  This is an example of a simple check using Riemann"
+  ;; send events to children only if the 2 conditions are true
   (where (and (service "memory/percent-used")
               (> (:metric event) threshold))
+    ;; io suppress child streams in tests
     (io #(info %))
+    ;; tap is used in tests
     (tap :ram-stream-tap)))
 
 (tests
