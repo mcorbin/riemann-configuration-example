@@ -18,6 +18,8 @@
               (> (:metric event) threshold))
     ;; io suppress child streams in tests
     (io #(info %))
+    ;; you can also send an email, cf disk.clj
+    ;; (io (email/email "foo@mcorbin.fr"))
     ;; tap is used in tests
     (tap :ram-stream-tap)))
 
