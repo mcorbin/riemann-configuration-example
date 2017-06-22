@@ -2,6 +2,6 @@
 
 This is a commented, tested Riemann configuration under construction.
 
-Streams do not necessarily follow Riemann best practices. Use this configuration to understand how Riemann works.
+Use this configuration to understand how Riemann works.
 
 https://mcorbin.fr/tags/tour-of-riemann/
