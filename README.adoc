@@ -4,4 +4,6 @@ This is a commented, tested Riemann configuration under construction.
 
 Use this configuration to understand how Riemann works.
 
+I will show a lot of things, and differents ways to build your Riemann configuration. It's up to you to choose the right patterns depending of your use cases ;)
+
 https://mcorbin.fr/tags/tour-of-riemann/
