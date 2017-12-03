@@ -14,7 +14,7 @@
   ;; filter by services and tags
   (where (and (tagged "cassandra") (service "cpu"))
   ;; every 10 seconds, send the last state for each host/service
-  ;; (service = cassandra actually so we only have differents hosts
+  ;; :service will always be "cpu" so we only have differents hosts on events
     (coalesce 10
       ;; apply mean using smap to compute the cpu mean
       (smap folds/mean
