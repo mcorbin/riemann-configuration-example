@@ -6,7 +6,7 @@
             [mycorp.output.email :as email]
             [clojure.tools.logging :refer :all]))
 
-;; more informations at : https://mcorbin.fr/posts/21-05-2017-riemann-by-stream/
+;; more informations at : http://localhost:3000/posts/2017-05-21-riemann-by-stream/
 
 (def disk-stream
   "Check if disk if > to 80 %, email if it is. Send only 2 email for each alert type."

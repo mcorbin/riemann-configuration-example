@@ -5,7 +5,7 @@
             [riemann.test :refer :all]
             [clojure.tools.logging :refer :all]))
 
-;; https://mcorbin.fr/posts/04-05-2017-simple-check/
+;; http://localhost:3000/posts/2017-05-04-simple-check/
 
 ;; this variable contains the ram threshold
 (def threshold 90)

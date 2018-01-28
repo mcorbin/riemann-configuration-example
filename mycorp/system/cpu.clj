@@ -7,7 +7,7 @@
             [mycorp.output.email :as email]
             [clojure.tools.logging :refer :all]))
 
-;; cf https://mcorbin.fr/posts/09-08-2017-coalesce/
+;; cf http://localhost:3000/posts/2017-08-09-coalesce/
 
 (def cpu-mean-alert-cassandra
   "A stream checking if the cpu mean for all hosts with service = `cpu` and tagged `cassandra` is > to 60"
